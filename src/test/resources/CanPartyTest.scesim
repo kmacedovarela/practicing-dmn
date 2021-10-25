@@ -35,24 +35,67 @@
         <FactMapping>
           <expressionElements>
             <ExpressionElement>
-              <step>Guests</step>
+              <step>Guest</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>name</step>
             </ExpressionElement>
           </expressionElements>
           <expressionIdentifier>
-            <name>1|1</name>
+            <name>1635133428380</name>
             <type>GIVEN</type>
           </expressionIdentifier>
           <factIdentifier>
-            <name>Guests</name>
-            <className>Guests</className>
+            <name>Guest</name>
+            <className>Guest</className>
           </factIdentifier>
-          <className>java.util.List</className>
-          <factAlias>Guests</factAlias>
+          <className>string</className>
+          <factAlias>Guest</factAlias>
+          <expressionAlias>name</expressionAlias>
+          <columnWidth>157.75</columnWidth>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Guest</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>birthdate</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1635133475045</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Guest</name>
+            <className>Guest</className>
+          </factIdentifier>
+          <className>date</className>
+          <factAlias>Guest</factAlias>
+          <expressionAlias>birthdate</expressionAlias>
+          <columnWidth>157.75</columnWidth>
+          <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
+        </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>Planned date</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1635134786860</name>
+            <type>GIVEN</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>Planned date</name>
+            <className>Planned date</className>
+          </factIdentifier>
+          <className>date</className>
+          <factAlias>Planned date</factAlias>
           <expressionAlias>value</expressionAlias>
-          <genericTypes>
-            <string>tGuests</string>
-          </genericTypes>
-          <columnWidth>245.5</columnWidth>
+          <columnWidth>157.75</columnWidth>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
         </FactMapping>
         <FactMapping>
@@ -73,7 +116,7 @@
           <factAlias>Can Party</factAlias>
           <expressionAlias>value</expressionAlias>
           <genericTypes/>
-          <columnWidth>245.5</columnWidth>
+          <columnWidth>157.75</columnWidth>
           <factMappingValueType>NOT_EXPRESSION</factMappingValueType>
         </FactMapping>
       </factMappings>
@@ -91,17 +134,6 @@
               <type>OTHER</type>
             </expressionIdentifier>
             <rawValue class="string">If Chucky is a guest, can't party</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>Guests</name>
-              <className>Guests</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1|1</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">[{"birthdate":"date(\"1980-01-01\")", "name":"\"Chucky\""},{"birthdate":"date(\"2000-01-02\")", "name":"\"Ash\""}]</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -125,6 +157,39 @@
             </expressionIdentifier>
             <rawValue class="string">1</rawValue>
           </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133428380</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">"Chucky"</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133475045</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("1980-10-10")</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Planned date</name>
+              <className>Planned date</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635134786860</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("2021-10-26")</rawValue>
+          </FactMappingValue>
         </factMappingValues>
       </Scenario>
       <Scenario>
@@ -138,18 +203,7 @@
               <name>Description</name>
               <type>OTHER</type>
             </expressionIdentifier>
-            <rawValue class="string">If there are no banned guest, can party</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>Guests</name>
-              <className>Guests</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1|1</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">[{"birthdate":"date(\"1990-01-01\")", "name":"John"}]</rawValue>
+            <rawValue class="string">If not part of the banned guests, can party</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -173,6 +227,39 @@
             </expressionIdentifier>
             <rawValue class="string">2</rawValue>
           </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133428380</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">"Alexx P"</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133475045</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("1980-10-10")</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Planned date</name>
+              <className>Planned date</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635134786860</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("2021-10-26")</rawValue>
+          </FactMappingValue>
         </factMappingValues>
       </Scenario>
       <Scenario>
@@ -187,17 +274,6 @@
               <type>OTHER</type>
             </expressionIdentifier>
             <rawValue class="string">Guests under 18y, can't party</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>Guests</name>
-              <className>Guests</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1|1</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">[{"birthdate":"date(\"2015-10-10\")", "name":"\"John Kid\""},{"birthdate":"date(\"1970-01-01\")", "name":"\"John Dad\""}]</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -221,6 +297,39 @@
             </expressionIdentifier>
             <rawValue class="string">3</rawValue>
           </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133428380</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">"Alex Kidd"</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133475045</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("2017-10-10")</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Planned date</name>
+              <className>Planned date</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635134786860</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("2021-10-26")</rawValue>
+          </FactMappingValue>
         </factMappingValues>
       </Scenario>
       <Scenario>
@@ -235,17 +344,6 @@
               <type>OTHER</type>
             </expressionIdentifier>
             <rawValue class="string">All guests over 18y, can party</rawValue>
-          </FactMappingValue>
-          <FactMappingValue>
-            <factIdentifier>
-              <name>Guests</name>
-              <className>Guests</className>
-            </factIdentifier>
-            <expressionIdentifier>
-              <name>1|1</name>
-              <type>GIVEN</type>
-            </expressionIdentifier>
-            <rawValue class="string">[{"birthdate":"date(\"1980-10-10\")", "name":"\"Kelly G\""},{"birthdate":"date(\"1980-10-02\")", "name":"\"Kirby\""},{"birthdate":"date(\"1977-02-02\")", "name":"\"Luigi\""}]</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier>
@@ -268,6 +366,179 @@
               <type>OTHER</type>
             </expressionIdentifier>
             <rawValue class="string">4</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133428380</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">"Steph"</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133475045</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("1980-10-10")</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Planned date</name>
+              <className>Planned date</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635134786860</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("2021-10-26")</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">Will be over 18y on the party date</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133428380</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">"Alexx"</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133475045</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("2003-10-25")</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Planned date</name>
+              <className>Planned date</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635134786860</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("2021-10-26")</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Can Party</name>
+              <className>Can Party</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">true</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">5</rawValue>
+          </FactMappingValue>
+        </factMappingValues>
+      </Scenario>
+      <Scenario>
+        <factMappingValues>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Scenario description</name>
+              <className>java.lang.String</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Description</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">Won't be over 18y on the party date</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133428380</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">"Alex Kidd"</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Guest</name>
+              <className>Guest</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635133475045</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("2003-10-25")</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Planned date</name>
+              <className>Planned date</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1635134786860</name>
+              <type>GIVEN</type>
+            </expressionIdentifier>
+            <rawValue class="string">date("2021-10-24")</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>Can Party</name>
+              <className>Can Party</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>1|2</name>
+              <type>EXPECT</type>
+            </expressionIdentifier>
+            <rawValue class="string">false</rawValue>
+          </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier>
+              <name>#</name>
+              <className>java.lang.Integer</className>
+            </factIdentifier>
+            <expressionIdentifier>
+              <name>Index</name>
+              <type>OTHER</type>
+            </expressionIdentifier>
+            <rawValue class="string">6</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
