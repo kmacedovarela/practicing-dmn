@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_7A146798-932D-473A-AF09-F4BFD4A2A668" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_0CD6FD43-4C45-4CFE-BD7E-7B6856687062" name="CanParty" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_7A146798-932D-473A-AF09-F4BFD4A2A668">
   <dmn:extensionElements/>
   <dmn:itemDefinition id="_0AF39246-D762-476E-B770-091452AA9307" name="tGuest" isCollection="false">
@@ -19,7 +20,7 @@
       <dmn:column id="_34A9B967-D2BD-42B7-8375-7103BA7A5309" name="name" typeRef="string"/>
       <dmn:row id="_080BB289-9ABC-46D9-AAC7-58532EADC5F8">
         <dmn:literalExpression id="_A0FDDBA0-7B94-4430-81E7-B2A434D378D7">
-          <dmn:text>"CHUCKY"</dmn:text>
+          <dmn:text>"DANNY"</dmn:text>
         </dmn:literalExpression>
       </dmn:row>
       <dmn:row id="_9743DF10-B491-4EF4-87CE-E8C25DE6AB46">
@@ -59,9 +60,9 @@
       <dmn:text>after(Planned date, (Guest.birthdate + duration("P18Y")))</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:decision id="_9047AAF1-0B20-4F19-B501-7BEE0183651A" name="Can Party">
+  <dmn:decision id="_9047AAF1-0B20-4F19-B501-7BEE0183651A" name="Guest Pre Approved?">
     <dmn:extensionElements/>
-    <dmn:variable id="_5A40E2CC-AAD1-4A79-AC28-E0635A4FF3F4" name="Can Party" typeRef="boolean"/>
+    <dmn:variable id="_5A40E2CC-AAD1-4A79-AC28-E0635A4FF3F4" name="Guest Pre Approved?" typeRef="boolean"/>
     <dmn:informationRequirement id="_7F24CBA7-32E7-417E-98D2-DC1CB36177DD">
       <dmn:requiredDecision href="#_40923529-A52E-40F2-A0D7-0FC57394477E"/>
     </dmn:informationRequirement>
