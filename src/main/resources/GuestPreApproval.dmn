@@ -63,11 +63,11 @@
   <dmn:decision id="_9047AAF1-0B20-4F19-B501-7BEE0183651A" name="Guest Pre Approved?">
     <dmn:extensionElements/>
     <dmn:variable id="_5A40E2CC-AAD1-4A79-AC28-E0635A4FF3F4" name="Guest Pre Approved?" typeRef="boolean"/>
-    <dmn:informationRequirement id="_7F24CBA7-32E7-417E-98D2-DC1CB36177DD">
-      <dmn:requiredDecision href="#_40923529-A52E-40F2-A0D7-0FC57394477E"/>
-    </dmn:informationRequirement>
     <dmn:informationRequirement id="_43A906C8-6CFF-44A6-AF4A-28FF3E1B5746">
       <dmn:requiredDecision href="#_237139FF-1674-4363-8BB5-493AC9FE9D55"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_7F24CBA7-32E7-417E-98D2-DC1CB36177DD">
+      <dmn:requiredDecision href="#_40923529-A52E-40F2-A0D7-0FC57394477E"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_69769CD0-9B5E-4116-B1F9-63EE18CA17C7">
       <dmn:text>not(marked as banned) and will have required age</dmn:text>
@@ -145,7 +145,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="376" y="57" width="100" height="50"/>
+        <dc:Bounds x="376" y="59" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_F1665659-178B-406F-A286-A358296E1A1F" dmnElementRef="_F1665659-178B-406F-A286-A358296E1A1F">
@@ -164,13 +164,13 @@
         <di:waypoint x="431" y="333"/>
         <di:waypoint x="509" y="220"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_7F24CBA7-32E7-417E-98D2-DC1CB36177DD-AUTO-SOURCE-AUTO-TARGET" dmnElementRef="_7F24CBA7-32E7-417E-98D2-DC1CB36177DD">
-        <di:waypoint x="342" y="195"/>
-        <di:waypoint x="426" y="107"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_43A906C8-6CFF-44A6-AF4A-28FF3E1B5746" dmnElementRef="_43A906C8-6CFF-44A6-AF4A-28FF3E1B5746">
         <di:waypoint x="509" y="220"/>
-        <di:waypoint x="426" y="82"/>
+        <di:waypoint x="426" y="84"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_7F24CBA7-32E7-417E-98D2-DC1CB36177DD-AUTO-SOURCE" dmnElementRef="_7F24CBA7-32E7-417E-98D2-DC1CB36177DD">
+        <di:waypoint x="342" y="195"/>
+        <di:waypoint x="426" y="84"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
